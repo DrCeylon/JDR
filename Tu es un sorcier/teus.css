@@ -1,0 +1,37 @@
+/*Configure the tab buttons*/
+.sheet-character,
+.sheet-config,
+.sheet-spells {
+	display: none;
+}
+
+/* show the selected tab */
+.sheet-tabstoggle[value="character"] ~ div.sheet-character,
+.sheet-tabstoggle[value="configuration"] ~ div.sheet-config,
+.sheet-tabstoggle[value="spells"] ~ div.sheet-spells {
+	display: block;
+}
+
+.sheet-character {
+	background-color: white;
+	background-image: url('teus.png');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	width: 601px;
+	height: 527px;
+	font-family: "Times New Roman", Georgia, Serif;
+}
+
+.sheet-Basics {
+    width: 80px;
+    font-weight: bold;
+    font-size: 1em;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: black;
+    display: inline-block;
+}
+
+.charsheet input.sheet-short {
+width: 3.5em;
+}
